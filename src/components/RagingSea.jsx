@@ -17,23 +17,23 @@ import { useEffect, useRef } from "react";
 const uniforms = {
   uTime: 0,
 
-  uBigWavesFrequency: new Vector2(2, 3),
-  uBigWavesSpeed: 0.2,
-  uBigWavesStrength: 0.35,
+  uBigWavesFrequency: new Vector2(3, 1),
+  uBigWavesSpeed: 1.25,
+  uBigWavesStrength: 0.15,
 
-  uSmallWavesFrequency: 4,
-  uSmallWavesSpeed: 0.5,
-  uSmallWavesStrength: 0.35,
+  uSmallWavesFrequency: 2,
+  uSmallWavesSpeed: 0.3,
+  uSmallWavesStrength: 0.18,
   uSmallWavesIteration: 3,
 
-  uSurfaceColor: new Color("#001058"),
-  uDeepColor: new Color("#ff4300"),
+  uSurfaceColor: new Color("#271442"),
+  uDeepColor: new Color("#ff0a81"),
   uElevationOffset: 1,
   uElevationMultiplier: 1,
 
   // Directional Light
   uDirectionalLightColor: new Color("#fff"),
-  uDirectionalLightIntensity: 4.03,
+  uDirectionalLightIntensity: 2,
   uSpecularPower: 36,
 };
 

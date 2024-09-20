@@ -1,7 +1,8 @@
 import { OrbitControls } from "@react-three/drei";
-import { Perf } from "r3f-perf";
 import RagingSea from "./components/RagingSea";
 import { useControls } from "leva";
+import usePerf from "./hooks/usePerf";
+import { Perf } from "r3f-perf";
 
 export default function Experience() {
   const { bgColor } = useControls("BG-Color", {
@@ -10,10 +11,10 @@ export default function Experience() {
       value: "#000000",
     },
   });
+  const { perfVisibility } = usePerf();
   return (
     <>
-      <Perf position="top-left" />
-
+      {perfVisibility && <Perf position="top-left" />}
       <OrbitControls makeDefault />
       <color args={[bgColor]} attach="background" />
 
