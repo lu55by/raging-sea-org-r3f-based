@@ -1,0 +1,64 @@
+# Dependency directories
+node_modules/
+bower_components/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build directories
+dist/
+build/
+out/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.lock
+
+# Coverage reports
+coverage/
+*.lcov
+.lcov-report/
+
+# Package lock files (optional, if you prefer to not version these)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Optional: ignore testing snapshots
+__snapshots__/
+*.snap
+
+# Optional: Next.js specific
+.next/
+
+# Optional: Nuxt.js specific
+.nuxt/
+
+# Optional: SvelteKit specific
+.svelte-kit/
+
+# Optional: React Native specific
+.expo/
+*.keystore
