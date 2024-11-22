@@ -206,7 +206,7 @@ export default function RagingSea() {
   return (
     <mesh position={[pos.x, pos.y, pos.z]} rotation={[rot.x, rot.y, rot.z]}>
       <planeGeometry args={[2, 2, 512, 512]} />
-      <ragingSeaShaderMaterial ref={matRef} />
+      <ragingSeaShaderMaterial ref={matRef} key={RagingSeaShaderMaterial.key} />
     </mesh>
   );
 }
